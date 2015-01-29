@@ -1,0 +1,51 @@
+﻿body {
+    width:80%;
+    margin:auto;
+}
+
+.calendarArticle {
+    float:left;
+    width:40%;
+    margin:auto;
+} 
+
+.todoAside{
+    float:right;
+    width:40%;
+    margin:auto;
+}
+
+ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+}
+  ul li {     
+      list-style:none;
+      margin-bottom:25px; 
+  }
+
+  
+  .glyphicon{
+      cursor:pointer;
+      vertical-align:middle;
+  }
+
+  .input-sm{
+      font-weight:bold;
+      border:none;
+      background-color:#5de2e2;
+      -webkit-appearance:none;
+  }
+
+  input [type=text]:focus{
+      border:1px;
+  }
+
+  .panel-body{
+      background-color:#5de2e2;
+  }
+
+  .strike {
+text-decoration: line-through;
+color:gray;
+}

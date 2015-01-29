@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ToDo</title>
+    <link rel="stylesheet" type="text/css" href="../../Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/ToDoStyle.css" />
+    
+    <script type="text/javascript" src="../../Scripts/jQuery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/Angular.js"></script>
+    <script type="text/javascript" src="../../Scripts/ToDoApp.js"></script>
+    <script type="text/javascript" src="../../Scripts/ToDoController.js"></script>
+</head>
+<body>
+    <div class="form-inline container" ng-controller="ToDoController">
+        <div class="navbar-right"><span class="glyphicon glyphicon-plus"></span></div>
+        <ul class="row">
+            <li ng-repeat="task in tasks track by $index">
+                <input type="checkbox" name="isDone" ng-model="task.isDone" />
+                <input type="text" name="title" ng-model="task.title" />
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
